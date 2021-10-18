@@ -16,6 +16,10 @@
         {{name}}
     </div>
 
+    <div class="app1">
+        {{hel}}
+    </div>
+
     <script src="https://unpkg.com/vue@next"></script>
 
     <script>
@@ -32,5 +36,17 @@
        app.mount('#app')
     </script>
     
+    <script>
+        let app1 = Vue.createApp({
+            data : function(){
+                return{
+                    hel: "Hello world"
+                }
+            }
+        })
+        app1.mount('#app1')
+    </script>
+
+
 </body>
 </html>
